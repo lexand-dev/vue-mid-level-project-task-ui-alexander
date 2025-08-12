@@ -76,7 +76,11 @@ onMounted(loadProjects())
           <td class="border px-4 py-2">{{ project.name }}</td>
           <td class="border px-4 py-2">{{ project.description }}</td>
           <td class="border px-4 py-2">{{ project.status }}</td>
-          <!--   <td class="border px-4 py-2">{{ project.due_date }}</td> -->
+          <td class="border px-4 py-2">
+            <button @click="openForm(project)" class="bg-yellow-500 text-white px-2 py-1 rounded">
+              Edit
+            </button>
+          </td>
         </tr>
       </tbody>
     </table>
